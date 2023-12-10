@@ -16,6 +16,22 @@
   Once you've implemented the logic, test your code by running
 */
 
-class Calculator {}
+const readline = require('node:readline').createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+readline.question(`What's your name?`, name => {
+  console.log(`Hi ${name}!`);
+  readline.close();
+});
+class Calculator {
+  constructor(result){
+    this.result = result
+  }
+  add(){
+
+  }
+}
 
 module.exports = Calculator;
